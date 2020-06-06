@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57E88319652702AE7F82DC2F /* Pods_DummyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB0895F28516B3CFA66613B /* Pods_DummyFramework.framework */; };
 		AE66243E248BFEE100655AD5 /* DummyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = AE66243C248BFEE100655AD5 /* DummyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE662445248BFEF400655AD5 /* DummyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE662444248BFEF400655AD5 /* DummyService.swift */; };
 		AE662447248BFF2C00655AD5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE662446248BFF2C00655AD5 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57AF654674D5A04446EE70D2 /* Pods-DummyFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DummyFramework.debug.xcconfig"; path = "Target Support Files/Pods-DummyFramework/Pods-DummyFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		AE662439248BFEE100655AD5 /* DummyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DummyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE66243C248BFEE100655AD5 /* DummyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DummyFramework.h; sourceTree = "<group>"; };
 		AE66243D248BFEE100655AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE662444248BFEF400655AD5 /* DummyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyService.swift; sourceTree = "<group>"; };
 		AE662446248BFF2C00655AD5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		C6E451669511874D80EEA830 /* Pods-DummyFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DummyFramework.release.xcconfig"; path = "Target Support Files/Pods-DummyFramework/Pods-DummyFramework.release.xcconfig"; sourceTree = "<group>"; };
+		FEB0895F28516B3CFA66613B /* Pods_DummyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DummyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,18 +29,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57E88319652702AE7F82DC2F /* Pods_DummyFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		123B45492486210BB1B6298B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57AF654674D5A04446EE70D2 /* Pods-DummyFramework.debug.xcconfig */,
+				C6E451669511874D80EEA830 /* Pods-DummyFramework.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		69B3C60F1AD3E56DB462F734 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEB0895F28516B3CFA66613B /* Pods_DummyFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE66242F248BFEE100655AD5 = {
 			isa = PBXGroup;
 			children = (
 				AE662446248BFF2C00655AD5 /* Media.xcassets */,
 				AE66243B248BFEE100655AD5 /* DummyFramework */,
 				AE66243A248BFEE100655AD5 /* Products */,
+				123B45492486210BB1B6298B /* Pods */,
+				69B3C60F1AD3E56DB462F734 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +101,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE662441248BFEE100655AD5 /* Build configuration list for PBXNativeTarget "DummyFramework" */;
 			buildPhases = (
+				BAB03033AD9C966C0A42EB8C /* [CP] Check Pods Manifest.lock */,
 				AE662434248BFEE100655AD5 /* Headers */,
 				AE662435248BFEE100655AD5 /* Sources */,
 				AE662436248BFEE100655AD5 /* Frameworks */,
@@ -133,6 +159,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BAB03033AD9C966C0A42EB8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DummyFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE662435248BFEE100655AD5 /* Sources */ = {
@@ -268,6 +319,7 @@
 		};
 		AE662442248BFEE100655AD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57AF654674D5A04446EE70D2 /* Pods-DummyFramework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,6 +346,7 @@
 		};
 		AE662443248BFEE100655AD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6E451669511874D80EEA830 /* Pods-DummyFramework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
