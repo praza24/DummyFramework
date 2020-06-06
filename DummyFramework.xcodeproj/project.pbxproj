@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		AE66243E248BFEE100655AD5 /* DummyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = AE66243C248BFEE100655AD5 /* DummyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE662445248BFEF400655AD5 /* DummyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE662444248BFEF400655AD5 /* DummyService.swift */; };
+		AE662447248BFF2C00655AD5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE662446248BFF2C00655AD5 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AE662439248BFEE100655AD5 /* DummyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DummyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE66243C248BFEE100655AD5 /* DummyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DummyFramework.h; sourceTree = "<group>"; };
 		AE66243D248BFEE100655AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE662444248BFEF400655AD5 /* DummyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyService.swift; sourceTree = "<group>"; };
+		AE662446248BFF2C00655AD5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,7 @@
 		AE66242F248BFEE100655AD5 = {
 			isa = PBXGroup;
 			children = (
+				AE662446248BFF2C00655AD5 /* Media.xcassets */,
 				AE66243B248BFEE100655AD5 /* DummyFramework */,
 				AE66243A248BFEE100655AD5 /* Products */,
 			);
@@ -48,6 +53,7 @@
 			children = (
 				AE66243C248BFEE100655AD5 /* DummyFramework.h */,
 				AE66243D248BFEE100655AD5 /* Info.plist */,
+				AE662444248BFEF400655AD5 /* DummyService.swift */,
 			);
 			path = DummyFramework;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					AE662438248BFEE100655AD5 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -121,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE662447248BFF2C00655AD5 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE662445248BFEF400655AD5 /* DummyService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 		AE662442248BFEE100655AD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4NCWA5D7GZ;
@@ -276,6 +286,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.prasath.DummyFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +295,7 @@
 		AE662443248BFEE100655AD5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4NCWA5D7GZ;
