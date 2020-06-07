@@ -1,7 +1,7 @@
 
 import Foundation
 
-class DummyService {
+public class DummyService {
     
     private init() { }
     
